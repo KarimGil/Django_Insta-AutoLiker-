@@ -1,0 +1,185 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+    <link href="{%static 'style.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'bootstrap-3.4.1-dist\css\bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+    
+  <script src="{% static 'bootstrap-3.4.1-dist\js\bootstrap.min.js' %}"></script>
+</head>
+<body style="margin:0;">
+<div class="top_bar"><img src="{% static 'images/logo.png' %}" style="margin-top: 10px;
+    width: 10%;">
+</div>
+    <!--top-bar-->
+<div class="header_home">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="margin-bottom: 2%;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="followers">Followers</a></li>
+        <li><a href="lcv.html">Likes/Comments/Views</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="vip.html">VIP</a></li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right nav_font_style">
+        <li><a href="#">Profile<span><img src="{% static 'images/user.png' %}"  width="25"></span></a></li>
+        <li><a href="my_bets.html">000_000121 <i class="fa fa-angle-down" style="color: white"></i></a></li>
+        <li><a href="#"><i class="fa fa-cog"></i></a></li>           
+      </ul>
+    </div>
+  </div>
+</nav><!--header_left-->
+<div class="container" >
+    <h1 style="color: #fff;font-weight: bold; margin-left:15%;margin-top: 10%;">INFLUCENA ZONE</h1>
+    <h4 style="color: #fff; margin-left:15%">Autoliker is the best Instagram liker tools which helps you to increase unlimite Instagram likes on status or photos. You can use this Website daily to increase your likes.
+    </h4>
+</div>
+</div>
+<!--header-->
+<div class="container" style="width: 100%;margin-top: 30%;background: #ddd;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <div style="margin-left:45%; font-family: 'Dancing Script', cursive"><h1 style="color: white">Earn Coins</h1></div>
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+<!--                             <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote> -->
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+<!--                             <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote> -->
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+<!--                             <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote> -->
+                        </div>
+                    </div>
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1" class="active"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                    </ol>
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href=" {% static '#quote-carousel' %}" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="{% static '#quote-carousel' %}" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foll-bn">
+        <button class="bevelBox" style="background: gainsboro;border: white;margin-left: 30%;margin-bottom: 5%;margin-top: -20px;width: 40%;height: 60px;border-radius: 10px;">
+            <span class="bn">Follow</span>+4</button>
+            <span><img src="images/icon.png" style="width: 8%;height: 50px;margin-top: -12px;
+           float: right;margin-right: 10%;border-radius: 50%;border: 3px solid #fff;">
+            </span>
+            <span style="float: right;margin-right: -75px;margin-top: 20px;font-weight: bold;">1.0X</span>
+    </div>
+  <!-- SERVICES -->
+<section id="services" class="module">
+
+    <div class="container">
+
+        <div class="row multi-columns-row">
+
+            <!-- CONTENT BOX -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="content-box">
+                    <div class="content-box-icon">
+                        <i class="fa fa-heart-o" style="color: orange;"></i>
+                    </div>
+                    <h5 class="content-box-title font-alt">Active Users</h5>
+                    <div class="content-box-text">
+                        Our Tool provides 200 active likes in each submit and upto 10k Likes in a Day. Users Love our Auto Liker. We have user from all over the world specially USA, UK and India.
+                    </div>
+                </div>
+            </div>
+            <!-- /CONTENT BOX -->
+
+            <!-- CONTENT BOX -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="content-box">
+                    <div class="content-box-icon">
+                        <i class="fa fa-unlock" style="color: orange;"></i>
+                    </div>
+                    <h5 class="content-box-title font-alt">NO SPAM</h5>
+                    <div class="content-box-text">
+                        We just hate Spam. Our Autoliker is 100% Safe and Trusted. We dont Auto Post from users Access Token. We dont sell Likes and exchange Tokens. Feel Safe to use Us
+                    </div>
+                </div>
+            </div>
+            <!-- /CONTENT BOX -->
+
+            <!-- CONTENT BOX -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="content-box">
+                    <div class="content-box-icon">
+                        <i class="fa fa-trophy" style="color: orange;"></i>
+                    </div>
+                    <h5 class="content-box-title font-alt">Working Tools</h5>
+                    <div class="content-box-text">
+                        Our Site have 100% working tools which provides Instant service whic you chose. Watch our Tutorial if you have any problem in using our site.
+                    </div>
+                </div>
+            </div>
+            <!-- /CONTENT BOX -->
+
+        </div>
+
+    </div>
+
+</section>
+<!-- /SERVICES -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="background: #3b9da0;font-size: 24px;line-height: 70px;color: white;padding-left: 10px;margin-bottom: 20px;">Hello! If you are first time user then dont forget to watch How to use Tutorial and see our FAQs.</div>
+
+           <div class="col-12" style="background: #286090;font-size: 24px;line-height: 70px;color: white;padding-left: 10px;margin-bottom: 20px;">Recent News: Auto Requests and Auto Reaction tools Added.</div>
+        </div>
+    </div>
+</section>
+ <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js' %}"></script>
+ <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js' %}"></script>
+ <script src="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

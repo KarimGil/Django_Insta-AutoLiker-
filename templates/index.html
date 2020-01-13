@@ -1,0 +1,52 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %} " integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body style="margin:0;
+  background:#ddd;">
+<div class="top_bar">LOGO</div><!--top-bar-->
+<div class="header">
+  <div class="header_left">
+    <ul>
+    	<li><a href="#">Home</a></li>
+        <li><a href="#">Followers</a></li>
+        <li><a href="#">likes/Comments/Views</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">VIP</a></li>
+    </ul>
+  </div><!--header_left-->
+  <div class="header_right">
+    <a href="#">Login?</a>
+  </div><!--header_right-->
+</div><!--header-->
+<div class="form_box">
+  <div class="title">Instagram</div><!---title-->
+   <div class="inner">
+    <form action="home" method="POST">
+      {% csrf_token %}
+       <div class="field_box">
+       <span>Username:</span><input type="text" name="firstname" >
+       </div><!--field_box-->
+       
+        <div class="field_box">
+        <span>Password:</span><input type="text" name="password" >
+        </div><!--field_box-->
+        
+        <div class="forget">
+          <a href="##">Forgot Password?</a>
+        </div><!--forget-->
+        
+      <input type="submit" value="Log in">
+      
+    </form> 
+    </div><!--inner-->
+</div><!--form_box-->
+
+
+</body>
+</html>
